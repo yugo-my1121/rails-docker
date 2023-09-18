@@ -22,3 +22,4 @@ rails-docker-db-1    postgres:12        "docker-entrypoint.sh postgres"         
 rails-docker-web-1   rails-docker-web   "bash -c 'rm -f tmp/pids/server.pid && rails db:create && rails db:migrate && rails s -b 0.0.0.0'"   web       13 seconds ago   Up 12 seconds   0.0.0.0:3000->3000/tcp
 
 ```
+1~3を実施後にhttp://localhost:3000/にブラウザからアクセスする。
